@@ -25,4 +25,3 @@ $ npm start
 ![registerationdb drawio](https://user-images.githubusercontent.com/33505398/198501755-7df48161-a1e8-4ecd-a3de-c7fbacfe15dd.png)
 
 ### 추후 예정
-로그인 기능 추가
