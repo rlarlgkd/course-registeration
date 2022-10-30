@@ -30,9 +30,24 @@ router.get('/', async (req, res, next) => {
     //   },
     //   order: [['createdAt', 'DESC']],
     // });
+    const courses = await Class.findAll();
     res.render('main', {
       title: 'NodeBird',
       // twits: posts,
+      allcourse: courses,
+    });
+  } catch (err) {
+    console.error(err);
+    next(err);
+  }
+});
+
+router.get('/allClass', async(req, res, next) => {
+  try {
+    // let courses = [];
+    // courses = await Class.findAll();
+    res.render('/wa',{
+      // allcourse: courses,
     });
   } catch (err) {
     console.error(err);
@@ -55,7 +70,7 @@ router.get('/hashtag', async (req, res, next) => {
 
     return res.render('main', {
       title: `${query} | NodeBird`,
-      twits: posts,
+      // twits: posts,
     });
   } catch (error) {
     console.error(error);
