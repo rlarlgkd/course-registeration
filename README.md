@@ -34,6 +34,21 @@ $ npm start
 npm i passport@0.5 로 해야 로그아웃 에러 안 뜸
 mysql에서 사용자 root 에 비밀번호 1234로 설정
 
+### 더미 데이터
+```sh
+
+insert into classes (id, name, room, capacity) values (1,'수학', '215호',40);
+insert into classes (id, name, room, capacity) values (2,'컴퓨터 기초', '315호',40);
+insert into classes (id, name, room, capacity) values (3,'교양1', '135호',40);
+insert into classes (id, name, room, capacity) values (4,'교양2', '425호',40);
+insert into classes (id, name, room, capacity) values (5,'필수1', '115호',40);
+insert into classes (id, name, room, capacity) values (6,'필수2', '515호',40);
+
+select * from classes;
+commit;
+
+```
+
 ### 추후 예정
 
 
